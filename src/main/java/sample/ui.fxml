@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane fx:id="gridPane" alignment="center" gridLinesVisible="false" onKeyReleased="#onKeyReleased" style="-fx-background-image: url('map.jpg');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+       <RowConstraints minHeight="10.0" prefHeight="40.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+       <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#onHelpButton" text="按键帮助" GridPane.columnIndex="15" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label fx:id="infoLabel" GridPane.columnIndex="15" GridPane.halignment="LEFT" GridPane.rowSpan="5" GridPane.valignment="CENTER" />
+   </children>
+</GridPane>
