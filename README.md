@@ -1,10 +1,19 @@
 # JavaFinalProject
-+ 共四部分：系统操作说明、系统概述、代码实现细节和单元测试。
 - [系统操作说明](#系统操作说明)  
 - [系统概述](#系统概述)  
   - [Main类](#Main类)  
+  - [Controller类](#Controller类)
+  - [Replay类](#Replay类)
+  - [Creature抽象类](#Creature抽象类)
+  - [Formation抽象类](#Formation抽象类)
+  - [BattleGround类](#BattleGround类)
 - [代码实现细节](#代码实现细节)  
+  - [多线程协同](#多线程协同)
+  - [图形化内容](#图形化内容)
+  - [移动和攻击细节](#移动和攻击细节)
 - [单元测试](#单元测试)  
+  - [Replay读取测试](#Replay读取测试)
+  - [Formation切换与BattleGround部署阵型测试](#Formation切换与BattleGround部署阵型测试)
 ## 系统操作说明
 + D键：随机设置双方阵型（双方各八种阵型）（需要战斗结束后）
   + 葫芦娃由于人数限制，阵型不一定符合原型。老爷爷有时也参与阵型，未参与时将位于战场左下角。
