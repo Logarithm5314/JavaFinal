@@ -4,6 +4,7 @@ public class MonsterFormation extends Formation {
     public MonsterFormation(){
         changeSize(Name.HEYI);
     }
+    @Override
     public void changeFormation(Name name){
         changeSize(name);
         int start = 10;

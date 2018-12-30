@@ -11,12 +11,14 @@ import sample.BattleGround.*;
 
 public abstract class Creature extends Thread{
     // private static int max_id = 0;
+    public static final int WAIT_TIME = 50;
     int id;
     char symbol;
     int camp;
     boolean alive;
 
     int atkRange;
+    int detectRange;
     int hitPoints;
     int maxHP;
     int atk;
@@ -28,7 +30,8 @@ public abstract class Creature extends Thread{
 
     Creature(){
         alive = true;
-        atkRange = 10;
+        atkRange = 3;
+        detectRange = 2;
         atk = 1;
         progressBar = new ProgressBar();
         progressBar.setMinHeight(1);
@@ -52,7 +55,7 @@ public abstract class Creature extends Thread{
                 //System.out.println(id + " " + ranNum);
                 if (move == 0 && turn == id) {
                     try{
-                        sleep(300);
+                        sleep(WAIT_TIME);
                     } catch (InterruptedException e){
                         e.printStackTrace();
                     }
@@ -247,7 +250,8 @@ public abstract class Creature extends Thread{
                         flag = 1;
                         break;
                     }
-                    engaging = true;
+                    if (Math.abs(i - fromY) <= atkRange && Math.abs(j - fromX) <= detectRange)
+                        engaging = true;
                 }
             }
             if (flag == 1)

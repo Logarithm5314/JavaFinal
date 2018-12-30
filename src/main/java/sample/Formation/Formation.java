@@ -30,6 +30,7 @@ public abstract class Formation{
     public int getLength(){
         return name.length;
     }
+    abstract void changeFormation(Name name);
 
     /*protected void clear(){
         for (int i = 0; i < name.width; i++)

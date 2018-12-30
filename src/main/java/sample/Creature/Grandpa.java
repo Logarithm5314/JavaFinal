@@ -15,5 +15,6 @@ public class Grandpa extends Creature{
         label.setGraphic(new ImageView(image));
         hitPoints = maxHP = 5;
         progressBar.setProgress((double)hitPoints / maxHP);
+        progressBar.setStyle("-fx-accent: blue");
     }
 }

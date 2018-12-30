@@ -42,6 +42,7 @@ public class Controller implements Initializable {
     public static final int NUM = 40;
     public static final int N = 15;
     public static int combatNum = 0;
+    public static final int PROJECTILE_FLYING_TIME = 175;
 
     BattleGround battleGround;
     CalabashFormation CBformaiton;
@@ -145,7 +146,7 @@ public class Controller implements Initializable {
                                     gridPane.add(projectile, lastX, lastY);
                                     GridPane.setHalignment(projectile, HPos.CENTER);
                                     GridPane.setValignment(projectile, VPos.CENTER);
-                                    TranslateTransition tt = new TranslateTransition(Duration.millis(1000), projectile);
+                                    TranslateTransition tt = new TranslateTransition(Duration.millis(PROJECTILE_FLYING_TIME), projectile);
                                     tt.setToX(gapX * 50.0);
                                     tt.setToY(gapY * 40.0);
                                     tt.play();
@@ -170,7 +171,7 @@ public class Controller implements Initializable {
                             //}
                         });
                         try {
-                            Thread.sleep(1000);
+                            Thread.sleep(PROJECTILE_FLYING_TIME);
                         }catch (InterruptedException e){
                             e.printStackTrace();
                         }
@@ -248,7 +249,10 @@ public class Controller implements Initializable {
         else if (event.getCode() == KeyCode.L && available){
             Stage stage = (Stage) gridPane.getScene().getWindow();
             FileChooser fileChooser = new FileChooser();
+            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Battle Log", "*.log"));
             File file = fileChooser.showOpenDialog(stage);
+            if (file == null)
+                return;
             replay = null;
             replay = new Replay();
             replay.loadReplay(file);
@@ -259,7 +263,10 @@ public class Controller implements Initializable {
         else if (event.getCode() == KeyCode.S && available){
             Stage stage = (Stage) gridPane.getScene().getWindow();
             FileChooser fileChooser = new FileChooser();
+            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Battle Log", "*.log"));
             File file = fileChooser.showSaveDialog(stage);
+            if (file == null)
+                return;
             replay.saveReplay(file);
         }
     }

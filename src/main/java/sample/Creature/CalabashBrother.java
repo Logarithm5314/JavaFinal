@@ -50,5 +50,6 @@ public class CalabashBrother extends Creature{
         hitPoints = maxHP = 5;
         progressBar.setProgress((double)hitPoints / maxHP);
         System.out.println("Progress: " + (double)hitPoints / maxHP);
+        progressBar.setStyle("-fx-accent: blue");
     }
 }

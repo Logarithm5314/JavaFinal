@@ -37,6 +37,7 @@ public class CalabashFormation extends Formation {
             }
         }
     }
+    @Override
     public void changeFormation(Name name){
         changeSize(name);
         int start = 1;
