@@ -14,6 +14,9 @@
 - [单元测试](#单元测试)  
   - [Replay读取测试](#Replay读取测试)
   - [Formation切换与BattleGround部署阵型测试](#Formation切换与BattleGround部署阵型测试)
+  
+  
+![avatar](https://raw.githubusercontent.com/Logarithm5314/JavaFinal/master/ReadmeImage/QQ%E6%88%AA%E5%9B%BE20181230214710.png)
 ## 系统操作说明
 + D键：随机设置双方阵型（双方各八种阵型）（需要战斗结束后）
   + 葫芦娃由于人数限制，阵型不一定符合原型。老爷爷有时也参与阵型，未参与时将位于战场左下角。
