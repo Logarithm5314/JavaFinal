@@ -30,7 +30,7 @@ public abstract class Creature extends Thread{
 
     Creature(){
         alive = true;
-        atkRange = 3;
+        atkRange = 4;
         detectRange = 2;
         atk = 1;
         progressBar = new ProgressBar();

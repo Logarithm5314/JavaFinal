@@ -15,5 +15,6 @@ public class Scorpion extends Creature{
         label.setGraphic(new ImageView(image));
         hitPoints = maxHP = 5;
         progressBar.setProgress((double)hitPoints / maxHP);
+        atk = 2;
     }
 }

@@ -121,7 +121,7 @@ public class Controller implements Initializable {
                                     projectile = null;
                                     projectile = new Label();
                                     //projectile.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/image/BSL1544881545862.png"), 40, 40, false, false)));
-                                    projectile.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/image/Arrow2.png"), 25, 25, false, false)));
+                                    projectile.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/image/Arrow2.png"), 40, 40, false, false)));
                                     //projectileList.add(projectile);
                                     int lastX = 0, lastY = 0;
                                     for (int i = 0; i < N; i++){

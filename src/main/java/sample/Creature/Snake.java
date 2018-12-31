@@ -15,5 +15,6 @@ public class Snake extends Creature{
         label.setGraphic(new ImageView(image));
         hitPoints = maxHP = 5;
         progressBar.setProgress((double)hitPoints / maxHP);
+        atkRange = 7;
     }
 }
